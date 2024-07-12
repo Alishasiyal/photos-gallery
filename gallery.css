@@ -1,0 +1,131 @@
+/* Custom CSS for Photos World */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .left h3 {
+  margin: 0;
+}
+
+.navbar .right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.navbar .right a.active {
+  font-weight: bold;
+}
+
+.navbar .right a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.container {
+  margin-top: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.para {
+  text-align: center;
+}
+
+.btn-category {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.btn-category:hover {
+  background-color: #555;
+}
+
+.category {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.category img {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-gray {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-gray:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category {
+    flex-direction: column;
+  }
+
+  .btn-category {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: gray; /* Light gray text color */
+}
+
+.footer-bottom p {
+  margin: 0;
+}
